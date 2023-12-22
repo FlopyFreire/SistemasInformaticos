@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Pràctica 1 - UD3</title>
+    <meta name="author" content="Florencia Ibarra"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        body.hidden {
+          visibility: hidden;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+
+        <h1>INSTALACIÓN DE LUBUNTU LT EN UN SISTEMA UEFI</h1>
+
+        <br/>
+
+        <button id="miBoton">NO HAGAS CLICK AQUÍ, OSCAR</button>
+
+        <script>
+            document.getElementById("miBoton").addEventListener("click", function() {
+            var windowWidth = 300; // Ancho de la ventana
+            var windowHeight = 200; // Alto de la ventana
+
+            // Calcular la posición para centrar la ventana en la pantalla
+            var leftPosition = (window.screen.width - windowWidth) / 2;
+            var topPosition = (window.screen.height - windowHeight) / 2;
+  
+            // Abrir una nueva ventana emergente centrada en la pantalla
+            var ventanaEmergente = window.open("", "MiVentanaEmergente", "width=" + windowWidth + ",height=" + windowHeight + ",top=" + topPosition + ",left=" + leftPosition);
+            
+            // Escribir algo dentro de la ventana emergente
+            ventanaEmergente.document.write("<p>¡No debiste apretar el botón, Óscar, ahora todo el trabajo desaparecerá.</p>");
+           
+            document.body.classList.add("hidden");
+
+            ventanaEmergente.onunload = function() {
+                var secondWindowWidth = 300; // Ancho de la segunda ventana
+                var secondWindowHeight = 200; // Alto de la segunda ventana
+                var secondLeftPosition = (window.screen.width - secondWindowWidth) / 2;
+                var secondTopPosition = (window.screen.height - secondWindowHeight) / 2;
+
+
+                // Abrir una nueva ventana con un mensaje al cerrar la primera ventana
+                var nuevaVentana = window.open("", "NuevaVentana", "width=250,height=150");
+                nuevaVentana.document.write("<p>Es broma, refresca la página, ¡PERO NO APRIETES EL BOTÓN!.</p>");
+            };
+        });
+        </script>
+        
+        <nav>
+             <ul>
+                <li><a href="../Máquinas Virtuales/carpeta/Intro.html"><strong>INTRODUCCIÓN</strong></a></li>
+                <li><a href="../Máquinas Virtuales/carpeta/objetivos.html"><strong>OBJETIVOS</strong></a></li>
+                <li><a href="../Máquinas Virtuales/carpeta/material.html"><strong>MATERIAL</strong></a></li>
+                <li><a href="../Máquinas Virtuales/carpeta/desarrollo.html"><strong>DESARROLLO</strong></a></li>
+                <li><a href="../Máquinas Virtuales/carpeta/problemas.html"><strong>PROBLEMAS</strong></a></li>
+                <li><a href="../Máquinas Virtuales/carpeta/conclusion.html"><strong>CONCLUSIÓN</strong></a></li>
+
+            </ul>
+        </nav>
+
+        <button id="botonImagen" onclick="abrirVentana()">¡ESTE SÍ PUEDES APRETARLO, ÓSCAR!</button>
+
+        <script>
+            function abrirVentana() {
+            var windowWidth = 600; // Ancho de la ventana
+            var windowHeight = 500; // Alto de la ventana
+
+            // Calcular la posición para centrar la ventana en la pantalla
+            var leftPosition = (window.screen.width - windowWidth) / 2;
+            var topPosition = (window.screen.height - windowHeight) / 2;
+
+            // Abrir una nueva ventana emergente centrada en la pantalla
+            var ventanaEmergente = window.open("", "MiVentanaEmergente", "width=" + windowWidth + ",height=" + windowHeight + ",top=" + topPosition + ",left=" + leftPosition);
+            
+            // Escribir el código HTML para mostrar la imagen GIF en la ventana emergente
+            ventanaEmergente.document.write("<!DOCTYPE html><html><head><title>Imagen GIF</title></head><body style='text-align:center;'><img src='https://media.licdn.com/dms/image/C5622AQFbAU52G7p7sQ/feedshare-shrink_2048_1536/0/1608799905525?e=2147483647&v=beta&t=mqrL5ENxD2IqQNITJxNKiDEhE-4qiKJfBkh46SbRsmU' alt='Imagen GIF' style='max-width:100%; max-height:100%;'></body></html>");
+            
+            ventanaEmergente.document.write("<p><strong>¡FELICES FIESTAS, ÓSCAR! QUE TENGAS UN 2024 MARAVILLOSO</strong></p>");
+
+            }
+        </script>
+
+
+        
+    </header>
+    <figure>
+        <img
+        src="../Máquinas Virtuales/Imagen/imagen1.jpg"/>
+        
+    </figure>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Pràctica 1 - UD3</title>
+    <meta name="author" content="Florencia Ibarra"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <a href="../ABRE AQUÍ, ÓSCAR.html">VOLVER AL INICIO</a>
+    <h1>DESARROLLO</h1>
+    <ol>
+        <li><a href="#salto1"> ACTIVIDAD 1</a> </li>
+        <li><a href="#salto2"> ACTIVIDAD 2</a></li>
+        <li><a href="#salto3"> ACTIVIDAD 3</a> </li>
+        <li><a href="#salto4"> ACTIVIDAD 4</a> </li>
+        <li><a href="#salto5"> ACTIVIDAD 5</a> </li>
+        <li><a href="#salto6"> ACTIVIDAD 6</a> </li>
+        <li><a href="#salto7"> ACTIVIDAD 7</a> </li>
+    </ol>
+
+    <figure>
+        <img
+        src="../Imagen/chiste.jpg">
+    </figure>
+
+    <section>
+        <h2><a id="salto1">Actividad 1</a></h2>
+        <h4>Esbrina els requisits maquinari mínim i òptim per a poder realitzar la instal·lació de la versió de Lubuntu Desktop 20.04 o 22.04.</h4>
+        <table style="border: 1px solid #000; width: 100%;">
+            <tr>
+                <th scope="col" style="border: 1px solid #000;">Req. Mínimos</th>
+                <th scope="col" style="border: 1px solid #000;">Req. Óptimos</th>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #000;">1 GB de RAM</td>
+                <td style="border: 1px solid #000;">2GB o más de RAM</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #000;">Procesador de 1 GHz</td>
+                <td style="border: 1px solid #000;">Procesador de múltiples núcleos o de 2 GHz o más.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #000;">10 GB de espacio libre en disco</td>
+                <td style="border: 1px solid #000;"> 20 GB o más de espacio libre en disco para una instalación cómoda y espacio adicional para programas y archivos.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #000;">Tarjeta gráfica y monitor capaz de una resolución de 1024x768.</td>
+                <td style="border: 1px solid #000;">Tarjeta gráfica y monitor con soporte para resoluciones más altas y capacidades gráficas superiores.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #000;">Unidad de CD/DVD o USB para la instalación.</td>
+                <td style="border: 1px solid #000;">Unidad de CD/DVD o USB para la instalación.</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2><a id="salto2">Actividad 2</a></h2>
+        <h4>Inserida una captura de pantalla de Virtualbox amb la màquina configurada on es vegen les característiques de la maquina virtual creada</h4>
+            <img
+            src="../Imagen/caracteristicas.png">
+            <figcaption>
+                Aquí se pueden ver las características pedidas para la creación de la máquina virtual Lubbuntu 20.04.5
+            </figcaption>
+        </figure>
+        <br>
+        <br>
+        <p>Entre las características solicitadas se encuentra el nombre de la máquina, la creación de un segundo disco duro, 4 GiB de memoria RAM, el orden de cómo se debe arrancar, teniendo en cuenta que primero va el disco óptico, en segundo lugar la tarjeta de red y en tercer lugar el disco duro. Por otra parte hay que activar las particiones EFI. Debe tener un procesador de dos núcleos, activar la función PAE/NX y dos tarjetas de red (una en adaptador puente y la otra en red interna)  </p>
+
+    </section>
+
+    <section>
+        <h2><a id="salto3">Actividad 3</a></h2>
+        <h4>Inseriu una captura de pantalla del menú de l'opció triada per a realitzar la taula de particions i CONTESTA A LES PREGUNTES</h4>
+        <figure>
+            <img
+            src="../Imagen/actividad 3.png">
+            <figcaption>
+                Aquí se pueden ver la opción de partición GPT.
+            </figcaption>
+        </figure>
+
+        <h4>És necessari realitzar una altra en sdb o serveix per als dos HDD? Per què? Cerca
+            la informació per a contestar-la en la teoria de classe i dedueix la resposta. En
+            què creus que consisteix la taula de particions de msdos i en quins sistemes
+            s'utilitzava? En els sistemes actuals es poden usar ambdues?
+        </h4>
+        <p>Es necesario realizar otra partición en sdb porque se tratan de HDD distintos, siempre y cuando se deseen segmentar ambos discos duros. Si solo se quiere partir uno, no hace falta hacer particiones en ambos. </p>
+        <p>La tabla de particiones MS-DOS se trata de una estructura de datos al principio de un disco duro que almacena la información sobre las particiones de ese disco. Esta tabla de particiones se utilizaba en sistemas compatibles con MS-DOS y otros sistemas operativos basados en DOS.</p>
+
+        <h4>Inseriu una captura de pantalla de l’estat final del sda en GParted</h4>
+        <figure>
+            <img
+            src="../Imagen/act3-2.png">
+            <figcaption>
+                Aquí se pueden ver la partición del sda.
+            </figcaption>
+        </figure>
+        <br/>
+        <h4>Inseriu una captura de pantalla de l’estat final del sdb en GParted</h4>
+        <figure>
+            <img
+            src="../Imagen/act3-3.png">
+            <figcaption>
+                Aquí se pueden ver la partición del sdb.
+            </figcaption>
+        </figure>
+    </section>
+    <section>
+        <h2><a id="salto4">Actividad 4</a></h2>
+        <h4>Des de l'escriptori de Lubuntu arranca la instal·lació del sistema operatiu per a
+            instal·lar-lo en el HDD del teu MV, tria l'idioma Castellà o Valencià, configura el
+            teclat seleccionant l'idioma, tria el tipus d'instal·lació mínima sense que s'actualitze
+            (sinó pot tardar més d'una hora la instal·lació). Quan et demane realitzar l'operació
+            de triar un disc dur on instal·lar el Sistema Operatiu realitza la configuració de
+            manera manual.
+        </h4>
+        <br/>
+        <h4>Inseriu una captura de pantalla de les modificacions realitzades en els discos
+            durs i CONTESTA A LA PREGUNTA.</h4>
+        <figure>    
+            <img
+            src="../Imagen/act4-2.png">
+            <figcaption>
+                Particiones desde la instalación de Lubuntu del HDD sda
+            </figcaption>
+        </figure>
+        <figure>    
+            <img
+            src="../Imagen/act4-4.png">
+            <figcaption>
+                Particiones desde la instalación de Lubuntu antes y después.
+            </figcaption>
+        </figure>
+        <figure>    
+            <img
+            src="../Imagen/act4-5.png">
+            <figcaption>
+                Particiones desde la instalación de Lubuntu.
+            </figcaption>
+        </figure>
+        <br/>
+        <h4>Que utilitat creus que pot tindre posar una partició com a punt de muntatge en /home?</h4>
+        <p>Si se pone el punto de montaje en /home para la separación de datos, si se reinstala el SO, los datos personales no se verán afectados si no se formatea. <br/>
+            Facilidad en actualizaciones o cambios del sistema. <br/>
+            Mantenimiento y gestión más simple <br/>
+            Múltiples sistemas operativos, ya que si se tiene más de un sistema operativo instalado en el mismo disco duro, compartir la partición /home entre ellos permite acceder a tus datos desde diferentes sistemas sin duplicarlos. 
+        </p>
+        <br>
+        <h4>Una de les particions són sistema de fitxers linux-swap de grandària 4GiB. ¿Quina relació té aquesta partició amb la grandària de la RAM?</h4>
+        <p> la relación entre la partición de intercambio y la RAM se establece para proporcionar un espacio adicional cuando la RAM se llena, permitiendo que el sistema opere de manera más fluida en momentos de alta demanda de recursos.</p>
+    </section>
+
+    <section>
+        <h2><a id="salto5">Actividad 5</a></h2>
+        <h4>Realitza una captura de pantalla de l'inici de sessió on apareix l'usuari i la seua contrasenya.</h4>
+        <figure>
+            <img
+            src="../Imagen/act5.png">
+            <figcaption>
+                Aquí se puede ver el inicio de sesión en Lubuntu
+            </figcaption>
+        </figure>
+    </section>
+    <section>
+        <h2><a id="salto6">Actividad 6</a></h2>
+        <h4>Realitza unes captura de pantalla de gparted amb la situació actual de les particions en tots dos HDD</h4>
+        <figure>
+            <img
+            src="../Imagen/act6.png">
+            <figcaption>
+                Partición desde GParted actualmente tras el inicio de sesión en sda.
+            </figcaption>
+        </figure>
+        <figure>
+            <img
+            src="../Imagen/act6-2.png">
+            <figcaption>
+                Partición desde GParted actualmente tras el inicio de sesión en sdb.
+            </figcaption>
+        </figure>
+    </section>
+    <section>
+        <h2><a id="salto7">Actividad 7</a></h2>
+        <h4>ESCRIU ELS COMANDOS I RESUMEIX COM S'UTILITZEN.</h4>
+        <p>Se utilizan varios comandos, entre ellos el <i>mount</i> y para desmontar se utiliza el <i>umount</i></p><br/>
+        <p>Para montar una partición:<br/>
+            Encontrar la partición: Puedes utilizar el comando <i>lsblk o fdisk -l </i> para listar los dispositivos de disco y sus particiones disponibles.
+            Crear un directorio para montar: Puedes crear una carpeta donde montarás la partición. Por ejemplo: <i>sudo mkdir /mnt/particion.</i>
+            Montar la partición: Utiliza el comando <i>sudo mount /dev/sdXY /mnt/particion,</i> donde /dev/sdXY es la ubicación de la partición que deseas montar.
+            Para desmontar la partición, utiliza el comando <i>sudo umount /mnt/particion.</i>
+        </p><br/>
+        <p>
+            Para montar un pendrive:<br/>
+            Conectar el pendrive: Inserta el dispositivo USB.
+            Encontrar la ubicación del pendrive: Utiliza <i>lsblk o fdisk -l</i> para identificar el dispositivo asignado al pendrive (como por ejemplo /dev/sdb1).
+            Crear un directorio para montar: Ejecuta <i>sudo mkdir /mnt/pendrive </i> (o cualquier otra ubicación que prefieras).
+            Montar el pendrive: Utiliza <i>sudo mount /dev/sdXY /mnt/pendrive,</i> donde /dev/sdXY es la ubicación del pendrive.
+            Para desmontar el pendrive, utiliza <i> sudo umount /mnt/pendrive </i>
+        </p>
+        
+    </section>
+
+
+
+</body>
